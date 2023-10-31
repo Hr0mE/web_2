@@ -11,11 +11,17 @@
 }
 
 .left{
-	position: absolute;
-	top: 50%;
+	position: relative;
+	top: 15px;
 	left: 5%;
-	transform: translate(0%, -50%);
 }
+
+.right{
+	position: absolute;
+	top: 20px;
+	right: 5%;
+}
+
 
 .navigation{
 	position: absolute;
@@ -49,8 +55,7 @@ input[name="r"]{
 .owl-carousel{
 	width: 600px;
 	height: 600px;
-	/*overflow: hidden;
-	*/border: 22px groove #f27e6e;
+	border: 22px outset #6b82b8;
 }
 
 
@@ -60,59 +65,38 @@ input[name="r"]{
 }
 
 
-#s1 {
-	margin-left:0;
-}
-
-#r1:checked ~ #s1{
-	mergin-left: 0;
-}
-
-#r2:checked ~ #s1{
-	mergin-left: -100%;
-}
-
-#r3:checked ~ #s1{
-	mergin-left: -30%;
-}
-
-#r4:checked ~ #s1{
-	mergin-left: -45%;
-}
-
-#r5:checked ~ #s1{
-	mergin-left: -60%;
-}
-
-#r6:checked ~ #s1{
-	mergin-left: -75%;
-}
-
-#r7:checked ~ #s1{
-	mergin-left: -90%;
-}
-
-
 .textfield{
-	width:600px;
-	height:600px;
-	border: 14px dotted #fb7260;
+	width:560px;
+	height:560px;
+	border: 14px dotted #6b82b8;
 	padding: 20px;
 	text-align: justify;
 }
 
-.right{
-	position: absolute;
-	top: 50%;
-	right: 5%;
-	transform: translate(0%, -50%);
-}
 
 .textfield_content{
 	position: absolute;
 	font-family: "Book Antiqua";
 	font-size: 28px;
+	padding-right: 20px;
 	
+}
+
+.social_wrap{
+}
+.social{
+	display: inline-block;
+	transform: scale(0.8) translate(300px, 0%);
+	transition: 0.2s;
+	opacity: 0.7;
+}
+
+.social:hover{
+	opacity: 1;
+}
+
+.empty{
+	bottom: 1000px;
 }
 
 .t1{
@@ -121,13 +105,4 @@ input[name="r"]{
 
 .t2{
 	visibility: hidden;
-}
-
-
-input[id='r1']:checked ~ .t1{
-	visibility: visible;
-}
-
-input[id='r2']:checked ~ .t2{
-	visibility: visible;
 }
