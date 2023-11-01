@@ -3,53 +3,17 @@
 	padding: 0px;
 }
 
-.slider{
-	width: 600px;
-	height: 600px;
-	overflow: hidden;
-	border: 22px groove #f27e6e;
-}
 
 .left{
 	position: relative;
-	top: 15px;
-	left: 5%;
+	top: 30px;
+	left: 8%;
 }
 
 .right{
 	position: absolute;
 	top: 20px;
-	right: 5%;
-}
-
-
-.navigation{
-	position: absolute;
-	bottom: 16px;
-	left: 50%;
-	transform: translate(-50%);
-	display: flex;
-}
-
-.bar{
-	height:8px;
-	width: 30px;
-	margin: 6px;
-	cursor: pointer;
-	background-color: #ddd;
-	opacity: 0.7;
-	border-radius: 10px;
-	transition: all 0.4s ease;
-}
-
-.bar:hover {
-	opacity: 1;
-	transform: scale(1.1);
-}
-
-input[name="r"]{
-	position: relative;
-	visibility: visible;
+	right: 8%;
 }
 
 .owl-carousel{
@@ -70,6 +34,7 @@ input[name="r"]{
 	height:560px;
 	border: 14px dotted #6b82b8;
 	padding: 20px;
+	top: 5%;
 	text-align: justify;
 }
 
@@ -82,21 +47,15 @@ input[name="r"]{
 	
 }
 
-.social_wrap{
-}
 .social{
 	display: inline-block;
 	transform: scale(0.8) translate(300px, 0%);
-	transition: 0.2s;
+	transition: 0.2s ease;
 	opacity: 0.7;
 }
 
 .social:hover{
 	opacity: 1;
-}
-
-.empty{
-	bottom: 1000px;
 }
 
 .t1{
@@ -106,3 +65,24 @@ input[name="r"]{
 .t2{
 	visibility: hidden;
 }
+
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+	transform: scale(3);
+	opacity: 0.6;
+	transition: 0.2s ease;
+}
+.owl-prev {
+    left: 10px;
+}
+.owl-next {
+    right: 10px;
+}
+
+.owl-prev:hover, .owl-next:hover{
+	opacity: 1;
+	transform: scale(3.2);
+} 
