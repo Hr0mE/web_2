@@ -7,13 +7,13 @@
 .left{
 	position: relative;
 	top: 30px;
-	left: 8%;
+	left: 5%;
 }
 
 .right{
 	position: absolute;
 	top: 20px;
-	right: 8%;
+	right: 5%;
 }
 
 .owl-carousel{
